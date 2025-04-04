@@ -11,6 +11,8 @@ const sortList = (list) => {
   employeesList.innerHTML = '';
 
   sortedListItems.forEach((item) => employeesList.append(item));
+
+  return sortedListItems;
 };
 
 const parseSalary = (str) => {
@@ -26,5 +28,7 @@ const getEmployees = (list) => {
   }));
 };
 
-sortList(employeesListItems);
+// eslint-disable-next-line no-unused-vars
+const sortedList = sortList(employeesListItems);
+
 getEmployees(employeesListItems);
